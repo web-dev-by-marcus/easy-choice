@@ -8,10 +8,5 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
   styleUrl: './tasks.component.css',
 })
 export class TasksComponent {
-  @Input({ required: true }) name!: string;
-  // @Output() task = new EventEmitter();
-
-  // selectTask() {
-  //   return this.task.emit(this.name);
-  // }
+  @Input() name?: string;
 }
