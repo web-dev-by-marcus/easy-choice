@@ -17,9 +17,14 @@ export class AppComponent {
   users = DUMMY_USERS;
   selectedUserId?: string;
   footerData = DUMMY_FOOTER_DATA;
+  addTask?: string;
 
   get selectedUser() {
     return this.users.find((user) => user.id === this.selectedUserId);
+  }
+
+  get addedTask() {
+    return 'A Task was added';
   }
 
   onSelectUser(id: string) {
