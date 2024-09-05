@@ -9,5 +9,9 @@ import { type Task } from '../task/task.model';
   styleUrl: './add-task.component.css',
 })
 export class AddTaskComponent {
-  @Output() add = new EventEmitter<string>();
+  @Output() cancel = new EventEmitter<void>();
+
+  onCancel() {
+    this.cancel.emit();
+  }
 }
