@@ -1,5 +1,5 @@
 @if (isAddingTask) {
-<app-add-task></app-add-task>
+<app-add-task (cancel)="onCancelAddTask()"></app-add-task>
 }
 
 <section id="tasks">
