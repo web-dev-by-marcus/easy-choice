@@ -17,4 +17,6 @@ export class AddTaskComponent {
   onCancel() {
     this.cancel.emit();
   }
+
+  onSubmit() {}
 }
