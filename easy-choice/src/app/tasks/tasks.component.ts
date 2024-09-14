@@ -58,7 +58,7 @@ export class TasksComponent {
   }
 
   onAddTask(taskData: NewTaskData) {
-    this.tasks.push({
+    this.tasks.unshift({
       id: new Date().getTime().toString(),
       userId: this.userId,
       title: taskData.title,
