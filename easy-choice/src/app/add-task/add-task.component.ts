@@ -22,6 +22,7 @@ export class AddTaskComponent {
     this.close.emit();
   }
 
+  // something going on here
   onSubmit() {
     this.taskService.addTask(
       {
