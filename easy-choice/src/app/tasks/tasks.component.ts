@@ -50,10 +50,6 @@ export class TasksComponent {
     return this.tasksService.getUserTasks(this.userId);
   }
 
-  onCompleteTask(id: string) {
-    this.tasks = this.tasks.filter((task) => task.id !== id);
-  }
-
   onStartAddTask() {
     this.isAddingTask = true;
   }
